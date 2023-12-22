@@ -84,7 +84,7 @@ const GradientCircularProgress: React.FunctionComponent<GradientCircularProgress
           fill="none"
           stroke={`url(#${firstHalfGradientId})`}
           strokeDasharray={`${firstHalfProg * halfCircumference},${halfCircumference}`}
-          strokeLinecap="round"
+          strokeLinecap="square"
           d={`
               M ${WIDTH / 2} ${strokeWidth / 2}
               a ${DIAMETER / 2} ${DIAMETER / 2} 0 1 1 0 ${DIAMETER}
@@ -98,7 +98,7 @@ const GradientCircularProgress: React.FunctionComponent<GradientCircularProgress
             fill="none"
             stroke={`url(#${secondHalfGradientId})`}
             strokeDasharray={`${secondHalfProg * halfCircumference},${halfCircumference}`}
-            strokeLinecap="round"
+            strokeLinecap="square"
             d={`
               M ${WIDTH / 2} ${WIDTH - strokeWidth / 2}
               a ${DIAMETER / 2} ${DIAMETER / 2} 0 0 1 0 -${DIAMETER}
